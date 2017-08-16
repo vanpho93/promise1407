@@ -36,3 +36,25 @@ function chia(soA, soB) {
         });
     });
 }
+
+const tinhDienTich = async (a, b, h) => {
+    const tong = await cong(a, b);
+    const tich = await nhan(+tong, h);
+    const kq = await chia(+tich, 2);
+    return kq;
+};
+
+// tinhDienTich(5, 10, 2)
+// .then(x => console.log(x))
+// .catch(err => console.log(err.message));
+
+// (a + b) * h / 2 -> 3
+// (a + b) (h / 2) -> 2
+
+Promise.all([cong('5', 10).catch(e => 100), chia(2, 2)])
+.then(x => console.log(x))
+.catch(err => console.log(err.message));
+
+// Promise.race([cong(5, 10), chia(2, 2)])
+// .then(x => console.log(x))
+// .catch(err => console.log(err));

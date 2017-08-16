@@ -34,6 +34,8 @@ function queryDb(sql, arrayData) {
     });
 }
 
-queryDb('SELECT * FROM "Product"', [])
-.then(result => console.log(result.rows))
-.catch(err => console.log(err.message));
+module.exports = queryDb;
+
+// queryDb('SELECT * FROM "Product"', [])
+// .then(result => console.log(result.rows))
+// .catch(err => console.log(err.message));
