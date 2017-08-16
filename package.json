@@ -4,5 +4,14 @@
     "express": "^4.15.4",
     "pg": "^7.1.2",
     "request": "^2.81.0"
+  },
+  "name": "promise1407",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vanpho93/promise1407.git",
+  "author": "Van Pho Nguyen <vanpho02@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index"
   }
 }
